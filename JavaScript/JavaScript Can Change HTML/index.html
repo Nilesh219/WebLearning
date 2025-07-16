@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        
+        *{
+            font-family: "Poetsen One", sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            border: 1px black solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>What can do JavaScript?</h2>
+    
+        <p id="demo">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize = '35px'">Click</button>
+
+        <p id="demo2">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'">click</button>
+
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="demo3" style="display: none;">Hello Javascript</p>
+        <button onclick="document.getElementById('demo3').style.display='block'">click</button>
+    </div>
+
+</body>
+</html>
